@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:backgroundTint="#F44336"
+    android:orientation="vertical"
+    tools:context=".LoginAccount.DangKi">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/anhlogoapp2"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_administrator"
+                    app:civ_border_color="#F44336"
+                    app:civ_border_width="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edHT_NV_Show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_person_24"
+                    android:hint="Họ Tên"
+                    android:background="@drawable/custom_input"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:drawablePadding="12dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Ngày Sinh:" />
+
+                    <TextView
+                        android:id="@+id/txtNS_NV_Show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="0000-00-00"
+                        android:gravity="center"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="#F44336"
+                        android:drawableEnd="@drawable/btn_date_img"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Giới Tính:" />
+
+                    <RadioGroup
+                        android:id="@+id/rdGT_NV_Group_Add"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rdGT_NV_Nam_Show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:checked="true"
+                            android:text="Nam"
+                            android:textColor="#F44336"
+                            android:textSize="20dp" />
+                        <RadioButton
+                            android:id="@+id/rdGT_NV_Nu_Show"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Nữ"
+                            android:layout_marginLeft="50dp"
+                            android:textSize="20dp"
+                            android:backgroundTint="@color/white"
+                            android:textColor="#F44336"
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edSDT_NV_Show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_phone_24"
+                    android:hint="Di Động"
+                    android:background="@drawable/custom_input"
+                    android:padding="5dp"
+                    android:inputType="number"
+                    android:layout_margin="5dp"
+                    android:drawablePadding="12dp"/>
+
+                <EditText
+                    android:id="@+id/edDC_NV_Show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_map_24"
+                    android:hint="Địa Chỉ"
+                    android:background="@drawable/custom_input"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:drawablePadding="12dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSuaNV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#FD483A"
+                    android:text="Sửa"
+                    app:icon="@drawable/outline_edit_black_20"
+                    app:iconTint="#FFFEFD" />
+
+                <Button
+                    android:id="@+id/btnXoaNV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FD483A"
+                    android:text="Xoá"
+                    app:icon="@drawable/outline_delete_black_20" />
+
+                <Button
+                    android:id="@+id/btnHuyShowNV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#F44336"
+                    android:text="Huỷ"
+                    app:icon="@android:drawable/ic_menu_close_clear_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

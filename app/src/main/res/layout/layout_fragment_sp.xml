@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh Muc San Pham"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ed_SearchSP"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:background="@drawable/custom_input"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnSearchSP"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#FFFFFF"
+            app:icon="@drawable/outline_search_black_24"
+            app:iconSize="25dp"
+            app:iconTint="#F44336" />
+
+        <Button
+            android:id="@+id/btnAddSP"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#FFFFFF"
+            app:icon="@drawable/outline_add_circle_black_36"
+            app:iconSize="25dp"
+            app:iconTint="#F44336" />
+    </LinearLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/lvSP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>

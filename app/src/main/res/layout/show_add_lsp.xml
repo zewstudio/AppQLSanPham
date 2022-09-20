@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:id="@+id/linear_SanPham"
+    >
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/anhlogoapp2"
+        />
+    <EditText
+        android:id="@+id/edTenLSP_ADD"
+        android:hint="Tên Loại"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/product_black_24"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_input"/>
+
+    <Button
+        android:id="@+id/btnAddLoaiSP_"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#4CAF50"
+        android:text="Save"
+        app:icon="@drawable/outline_save_black_36"
+        app:iconTint="#FFFEFD" />
+
+</LinearLayout>

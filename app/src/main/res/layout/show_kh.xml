@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:backgroundTint="#F44336"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/anhlogoapp2"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_administrator"
+                    app:civ_border_color="#F44336"
+                    app:civ_border_width="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edHT_KH_Show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/ic_person_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Họ Tên"
+                    android:padding="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Ngày Sinh" />
+
+                    <TextView
+                        android:id="@+id/txtNS_KH_Show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="0000-00-00"
+                        android:gravity="center"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="#F44336"
+                        android:drawableEnd="@drawable/btn_date_img"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Giới Tính:" />
+                    <RadioGroup
+                        android:id="@+id/rdGT_NV_Group_Add"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rdGT_KH_Nam_Show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:checked="true"
+                            android:text="Nam"
+                            android:textColor="#F44336"
+                            android:textSize="17dp" />
+                        <RadioButton
+                            android:id="@+id/rdGT_KH_Nu_Show"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Nữ"
+                            android:layout_marginLeft="50dp"
+                            android:textSize="17dp"
+                            android:backgroundTint="@color/white"
+                            android:textColor="#F44336"
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edSDT_KH_Show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/ic_phone_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Số Điện Thoại"
+                    android:padding="5dp"
+                    android:inputType="phone"
+                    />
+
+                <EditText
+                    android:id="@+id/edDC_KH_Show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/ic_map_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Địa Chỉ"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSuaKH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:backgroundTint="#FD483A"
+                    android:text="Sửa"
+                    app:icon="@drawable/outline_edit_black_20"
+                    app:iconTint="#FFFEFD" />
+
+                <Button
+                    android:id="@+id/btnXoaKH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:backgroundTint="#FD483A"
+                    android:text="Xoá"
+                    app:icon="@drawable/outline_delete_black_20"
+                    app:iconTint="#FFFEFD" />
+
+                <Button
+                    android:id="@+id/btnHuyShowKH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#F44336"
+                    android:text="Huỷ" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

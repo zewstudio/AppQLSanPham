@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mnu_QLSanPham" android:title="Quản Lý Sản Phẩm" android:icon="@drawable/qlsp"/>
+    <item android:id="@+id/mnu_QLKhachHang" android:title="Quản Lý Khách Hàng" android:icon="@drawable/qlkh"/>
+    <item android:id="@+id/mnu_ThongKe" android:title="Thống Kê Doanh Thu" android:icon="@drawable/tkdt"/>
+    <item android:id="@+id/mnu_QLLoaiSanPham" android:title="Quản Lý Loại Sản Phẩm" android:icon="@drawable/qllsp"/>
+    <item android:id="@+id/mnu_QLTaiKhoanCaNhan" android:title="Quản Lý Tài Khoản Cá Nhân" android:icon="@drawable/qltkcanhan"/>
+    <item android:id="@+id/mnu_QLHoaDon" android:title="Quản Lý Hoá Đơn" android:icon="@drawable/qlhd"/>
+    <item android:id="@+id/mnu_DangXuat" android:title="Đăng Xuất" android:icon="@drawable/logout"/>
+
+</menu>
